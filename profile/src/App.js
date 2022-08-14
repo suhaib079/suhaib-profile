@@ -1,22 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import './ResponsiveAppBar.js'
+import ResponsiveAppBar from './ResponsiveAppBar.js';
+import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
+import WovenImageList from './WovenImageList';
+import Create from './Create';
+import HireMe from './HireMe';
+import {createMuiTheme, ThemeProvider} from '@material-ui/core';
+import Carousel from './Carousel';
+import Skilles from './skills';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <ResponsiveAppBar/>
+        <Carousel/>
+        <Create/>
+       <WovenImageList/>
+       <Skilles/>
+       <HireMe/>
       </header>
     </div>
   );
